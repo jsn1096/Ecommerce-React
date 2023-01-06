@@ -1,8 +1,9 @@
+import { API_URL } from "../env"
 
 function App() {
 
   return (
-    <h1>Hola mundo</h1>
+    <h1>Hola mundo {API_URL} </h1>
   )
 }
 
