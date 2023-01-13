@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,300&display=swap');
+@font-face {
+  font-family: 'CascadiaCode';
+  src: url('../fonts/CascadiaCode.ttf');
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: rgb(233,246,246);
+background: linear-gradient(90deg, rgba(233,246,246,1) 17%, rgba(227,255,248,1) 49%, rgba(195,242,252,1) 74%);
+}
+.menu-item {
+  @apply px-4 font-semibold;
+}
+
+.input-t {
+  @apply w-360 h-40 rounded-md border border-gray-300 mt-2
+}
+
+.boton {
+  @apply w-full border p-3 mt-3 rounded-md font-semibold bg-bg-button text-white
+}

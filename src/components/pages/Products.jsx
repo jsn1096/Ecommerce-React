@@ -4,7 +4,7 @@ const Products = () => {
   return (
     <div>
       <h1>Products</h1>
-      <p>Explora nuestros productos</p>
+      <p className='text-red-500 font-cascadia'>Explora nuestros productos</p>
     </div>
   )
 }

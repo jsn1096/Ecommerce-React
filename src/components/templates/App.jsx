@@ -1,12 +1,17 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom'
+import { Navigate, Outlet } from 'react-router-dom'
 import MainHeader from '../organisms/MainHeader'
 
 const App = () => {
+
+  if (!localStorage.getItem('token')) return <Navigate to='/login' />
+
   return (
     <>
       <MainHeader />
-      <Outlet />
+      <div className='container lg:max-w-140 mx-auto pt-5'>
+        <Outlet />
+      </div>
     </>
   )
 }
